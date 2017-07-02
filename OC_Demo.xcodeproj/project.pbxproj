@@ -16,6 +16,8 @@
 		F9B99FE61F09221A008047F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B99FE41F09221A008047F4 /* LaunchScreen.storyboard */; };
 		F9B99FF11F09221A008047F4 /* OC_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FF01F09221A008047F4 /* OC_DemoTests.m */; };
 		F9B99FFC1F09221A008047F4 /* OC_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FFB1F09221A008047F4 /* OC_DemoUITests.m */; };
+		F9B9A0161F0927EF008047F4 /* ESPicPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B9A0151F0927EF008047F4 /* ESPicPageView.m */; };
+		F9D9838F1F0938A60041C661 /* HomeNAVController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D9838E1F0938A60041C661 /* HomeNAVController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		F9B99FF71F09221A008047F4 /* OC_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OC_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B99FFB1F09221A008047F4 /* OC_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OC_DemoUITests.m; sourceTree = "<group>"; };
 		F9B99FFD1F09221A008047F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B9A0141F0927EF008047F4 /* ESPicPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPicPageView.h; sourceTree = "<group>"; };
+		F9B9A0151F0927EF008047F4 /* ESPicPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPicPageView.m; sourceTree = "<group>"; };
+		F9D9838D1F0938A60041C661 /* HomeNAVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNAVController.h; sourceTree = "<group>"; };
+		F9D9838E1F0938A60041C661 /* HomeNAVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNAVController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +109,11 @@
 		F9B99FD21F092218008047F4 /* OC_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				F9B99FD61F092218008047F4 /* AppDelegate.h */,
-				F9B99FD71F092218008047F4 /* AppDelegate.m */,
-				F9B99FD91F092218008047F4 /* ViewController.h */,
-				F9B99FDA1F092218008047F4 /* ViewController.m */,
+				F9B9A00D1F092240008047F4 /* Models */,
+				F9B9A00C1F09223C008047F4 /* Views */,
+				F9B9A00B1F09222E008047F4 /* Controller */,
+				F9B9A00A1F09222A008047F4 /* Tool */,
+				F9B9A0091F092224008047F4 /* other */,
 				F9B99FDC1F092218008047F4 /* Main.storyboard */,
 				F9B99FE21F09221A008047F4 /* Assets.xcassets */,
 				F9B99FE41F09221A008047F4 /* LaunchScreen.storyboard */,
@@ -141,6 +148,75 @@
 				F9B99FFD1F09221A008047F4 /* Info.plist */,
 			);
 			path = OC_DemoUITests;
+			sourceTree = "<group>";
+		};
+		F9B9A0091F092224008047F4 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				F9B99FD61F092218008047F4 /* AppDelegate.h */,
+				F9B99FD71F092218008047F4 /* AppDelegate.m */,
+				F9B9A00E1F092286008047F4 /* lib */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		F9B9A00A1F09222A008047F4 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F9B9A00B1F09222E008047F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9B9A0101F092680008047F4 /* 主页 */,
+			);
+			name = Controller;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F9B9A00C1F09223C008047F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9B9A00F1F0922EA008047F4 /* IntiniterScrollView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F9B9A00D1F092240008047F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9B9A00E1F092286008047F4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		F9B9A00F1F0922EA008047F4 /* IntiniterScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F9B9A0141F0927EF008047F4 /* ESPicPageView.h */,
+				F9B9A0151F0927EF008047F4 /* ESPicPageView.m */,
+			);
+			name = IntiniterScrollView;
+			path = InfiniterScrollViews;
+			sourceTree = "<group>";
+		};
+		F9B9A0101F092680008047F4 /* 主页 */ = {
+			isa = PBXGroup;
+			children = (
+				F9B99FD91F092218008047F4 /* ViewController.h */,
+				F9B99FDA1F092218008047F4 /* ViewController.m */,
+				F9D9838D1F0938A60041C661 /* HomeNAVController.h */,
+				F9D9838E1F0938A60041C661 /* HomeNAVController.m */,
+			);
+			name = "主页";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +357,9 @@
 			files = (
 				F9B99FDB1F092218008047F4 /* ViewController.m in Sources */,
 				F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */,
+				F9D9838F1F0938A60041C661 /* HomeNAVController.m in Sources */,
 				F9B99FE11F09221A008047F4 /* OC_Demo.xcdatamodeld in Sources */,
+				F9B9A0161F0927EF008047F4 /* ESPicPageView.m in Sources */,
 				F9B99FD51F092218008047F4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +600,7 @@
 				F9B9A0021F09221A008047F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9B9A0031F09221A008047F4 /* Build configuration list for PBXNativeTarget "OC_DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +609,7 @@
 				F9B9A0051F09221A008047F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9B9A0061F09221A008047F4 /* Build configuration list for PBXNativeTarget "OC_DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +618,7 @@
 				F9B9A0081F09221A008047F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
