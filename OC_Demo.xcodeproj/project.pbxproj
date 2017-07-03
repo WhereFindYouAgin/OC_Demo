@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0CAA151F0A0D71006814D7 /* PPBadgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA141F0A0D71006814D7 /* PPBadgeLabel.m */; };
+		5F0CAA181F0A0EAC006814D7 /* UIView+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA171F0A0EAC006814D7 /* UIView+PPBadgeView.m */; };
+		5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA1A1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m */; };
+		5F0CAA1E1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA1D1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m */; };
 		F9B99FD51F092218008047F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD41F092218008047F4 /* main.m */; };
 		F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD71F092218008047F4 /* AppDelegate.m */; };
 		F9B99FDB1F092218008047F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FDA1F092218008047F4 /* ViewController.m */; };
@@ -38,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F0CAA131F0A0D71006814D7 /* PPBadgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBadgeLabel.h; sourceTree = "<group>"; };
+		5F0CAA141F0A0D71006814D7 /* PPBadgeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBadgeLabel.m; sourceTree = "<group>"; };
+		5F0CAA161F0A0EAC006814D7 /* UIView+PPBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PPBadgeView.h"; sourceTree = "<group>"; };
+		5F0CAA171F0A0EAC006814D7 /* UIView+PPBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PPBadgeView.m"; sourceTree = "<group>"; };
+		5F0CAA191F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+PPBadgeView.h"; sourceTree = "<group>"; };
+		5F0CAA1A1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+PPBadgeView.m"; sourceTree = "<group>"; };
+		5F0CAA1C1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+PPBadgeView.h"; sourceTree = "<group>"; };
+		5F0CAA1D1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+PPBadgeView.m"; sourceTree = "<group>"; };
+		5F0CAA1F1F0A1B65006814D7 /* PPBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPBadgeView.h; sourceTree = "<group>"; };
 		F9B99FD01F092218008047F4 /* OC_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B99FD41F092218008047F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9B99FD61F092218008047F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0CAA121F0A0D0D006814D7 /* PPBadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				5F0CAA1F1F0A1B65006814D7 /* PPBadgeView.h */,
+				5F0CAA131F0A0D71006814D7 /* PPBadgeLabel.h */,
+				5F0CAA141F0A0D71006814D7 /* PPBadgeLabel.m */,
+				5F0CAA161F0A0EAC006814D7 /* UIView+PPBadgeView.h */,
+				5F0CAA171F0A0EAC006814D7 /* UIView+PPBadgeView.m */,
+				5F0CAA191F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.h */,
+				5F0CAA1A1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m */,
+				5F0CAA1C1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.h */,
+				5F0CAA1D1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m */,
+			);
+			path = PPBadgeView;
+			sourceTree = "<group>";
+		};
 		F9B99FC71F092218008047F4 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +208,7 @@
 		F9B9A00C1F09223C008047F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5F0CAA121F0A0D0D006814D7 /* PPBadgeView */,
 				F9B9A00F1F0922EA008047F4 /* IntiniterScrollView */,
 			);
 			path = Views;
@@ -356,10 +386,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9B99FDB1F092218008047F4 /* ViewController.m in Sources */,
+				5F0CAA181F0A0EAC006814D7 /* UIView+PPBadgeView.m in Sources */,
 				F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */,
 				F9D9838F1F0938A60041C661 /* HomeNAVController.m in Sources */,
 				F9B99FE11F09221A008047F4 /* OC_Demo.xcdatamodeld in Sources */,
+				5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */,
 				F9B9A0161F0927EF008047F4 /* ESPicPageView.m in Sources */,
+				5F0CAA1E1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m in Sources */,
+				5F0CAA151F0A0D71006814D7 /* PPBadgeLabel.m in Sources */,
 				F9B99FD51F092218008047F4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +547,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YPA8ZFWJMP;
 				INFOPLIST_FILE = OC_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SLL.OC-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,6 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YPA8ZFWJMP;
 				INFOPLIST_FILE = OC_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SLL.OC-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";

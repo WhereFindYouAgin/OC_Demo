@@ -22,20 +22,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Tgu-tk-gtr"/>
+                    <navigationItem key="navigationItem" id="Tgu-tk-gtr">
+                        <barButtonItem key="leftBarButtonItem" title="消息" id="7U0-44-Qwe">
+                            <connections>
+                                <action selector="leftAction:" destination="BYZ-38-t0r" id="Mc5-kx-qea"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leftItem" destination="7U0-44-Qwe" id="UM4-BF-jCP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1350" y="224"/>
         </scene>
-        <!--Item-->
+        <!--主页-->
         <scene sceneID="AUF-B7-IFE">
             <objects>
                 <navigationController id="XMa-TE-E2k" customClass="HomeNAVController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="lf_tabbar_home" selectedImage="lf_tabbar_home_selected" id="Eql-Kg-Jh3"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FfB-85-PMJ">
+                    <tabBarItem key="tabBarItem" title="主页" image="lf_tabbar_home" selectedImage="lf_tabbar_home_selected" id="Eql-Kg-Jh3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FfB-85-PMJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ost-Hm-C8N"/>
@@ -45,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="718" y="224"/>
         </scene>
-        <!--Root View Controller-->
+        <!--我的-->
         <scene sceneID="AR0-38-u8w">
             <objects>
                 <tableViewController id="QZa-hS-M7K" sceneMemberID="viewController">
@@ -58,7 +69,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bVH-uf-h74" id="cRY-4K-gOZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -68,18 +79,18 @@
                             <outlet property="delegate" destination="QZa-hS-M7K" id="dul-g6-vri"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="dli-MX-Xjs"/>
+                    <navigationItem key="navigationItem" title="我的" id="dli-MX-Xjs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwU-5y-tG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351" y="922"/>
+            <point key="canvasLocation" x="1350" y="922"/>
         </scene>
-        <!--Item-->
+        <!--购物车-->
         <scene sceneID="Vhn-Iv-ZgA">
             <objects>
                 <navigationController id="z5I-By-3F2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="eif-k5-1wd"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NCi-MG-sQO">
+                    <tabBarItem key="tabBarItem" title="购物车" image="lf_tabbar_cart" selectedImage="lf_tabbar_cart_selected" id="eif-k5-1wd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" misplaced="YES" id="NCi-MG-sQO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -98,7 +109,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="KfD-sv-MIt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="XMa-TE-E2k" kind="relationship" relationship="viewControllers" id="tCb-Rt-Zd5"/>
@@ -111,6 +123,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="lf_tabbar_cart" width="30" height="30"/>
+        <image name="lf_tabbar_cart_selected" width="30" height="30"/>
         <image name="lf_tabbar_home" width="30" height="30"/>
         <image name="lf_tabbar_home_selected" width="30" height="30"/>
     </resources>

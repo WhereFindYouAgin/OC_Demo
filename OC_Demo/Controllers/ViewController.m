@@ -11,8 +11,10 @@
 
 #import "ViewController.h"
 #import "ESPicPageView.h"
+#import "PPBadgeView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *leftItem;
 
 @end
 
@@ -24,8 +26,8 @@
     ESPicPageView *eSPicPageView = [[ESPicPageView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_WIDTH / 2)];
     eSPicPageView.images = images;
     [self.view addSubview:eSPicPageView];
-    self.navigationController.tabBarItem.title = @"主页";
-    self.navigationController.tabBarItem.badgeValue = @"12";
+    [self.leftItem pp_addBadgeWithNumber:11];
+    [self.navigationController.tabBarItem pp_addBadgeWithText:@"11+"];
 }
 
 
@@ -34,5 +36,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)leftAction:(id)sender {
+    [self.leftItem pp_increase];
+}
 
 @end
