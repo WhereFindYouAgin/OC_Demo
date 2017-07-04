@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol mydelegateTest <NSObject>
+
+- (void)test;
+
+@end
 @interface ViewController : UIViewController
 
 

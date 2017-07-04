@@ -11,6 +11,16 @@
 		5F0CAA181F0A0EAC006814D7 /* UIView+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA171F0A0EAC006814D7 /* UIView+PPBadgeView.m */; };
 		5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA1A1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m */; };
 		5F0CAA1E1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA1D1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m */; };
+		5F0CAA231F0A38BC006814D7 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA221F0A38BC006814D7 /* MineViewController.m */; };
+		5FA003181F0B285C002E41F4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA003171F0B285C002E41F4 /* Person.m */; };
+		5FA0031C1F0B2D06002E41F4 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0031B1F0B2D06002E41F4 /* UIImage+image.m */; };
+		5FA0031F1F0B2EF7002E41F4 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0031E1F0B2EF7002E41F4 /* NSObject+Property.m */; };
+		5FA003211F0B3457002E41F4 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA003201F0B3457002E41F4 /* Property List.plist */; };
+		5FA003241F0B3803002E41F4 /* NSObject+ModelDic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA003231F0B3803002E41F4 /* NSObject+ModelDic.m */; };
+		5FA003281F0B3B56002E41F4 /* status.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA003271F0B3B56002E41F4 /* status.m */; };
+		5FA0032B1F0B475A002E41F4 /* user.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0032A1F0B475A002E41F4 /* user.m */; };
+		5FA0032E1F0B5AD6002E41F4 /* image.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0032D1F0B5AD6002E41F4 /* image.m */; };
+		5FA003311F0B75D7002E41F4 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA003301F0B75D7002E41F4 /* Movie.m */; };
 		F9B99FD51F092218008047F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD41F092218008047F4 /* main.m */; };
 		F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD71F092218008047F4 /* AppDelegate.m */; };
 		F9B99FDB1F092218008047F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FDA1F092218008047F4 /* ViewController.m */; };
@@ -51,6 +61,25 @@
 		5F0CAA1C1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+PPBadgeView.h"; sourceTree = "<group>"; };
 		5F0CAA1D1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+PPBadgeView.m"; sourceTree = "<group>"; };
 		5F0CAA1F1F0A1B65006814D7 /* PPBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPBadgeView.h; sourceTree = "<group>"; };
+		5F0CAA211F0A38BC006814D7 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		5F0CAA221F0A38BC006814D7 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		5FA003161F0B285C002E41F4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		5FA003171F0B285C002E41F4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5FA0031A1F0B2D06002E41F4 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		5FA0031B1F0B2D06002E41F4 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		5FA0031D1F0B2EF7002E41F4 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		5FA0031E1F0B2EF7002E41F4 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		5FA003201F0B3457002E41F4 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		5FA003221F0B3803002E41F4 /* NSObject+ModelDic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ModelDic.h"; sourceTree = "<group>"; };
+		5FA003231F0B3803002E41F4 /* NSObject+ModelDic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ModelDic.m"; sourceTree = "<group>"; };
+		5FA003261F0B3B56002E41F4 /* status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		5FA003271F0B3B56002E41F4 /* status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = status.m; sourceTree = "<group>"; };
+		5FA003291F0B475A002E41F4 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = user.h; sourceTree = "<group>"; };
+		5FA0032A1F0B475A002E41F4 /* user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = user.m; sourceTree = "<group>"; };
+		5FA0032C1F0B5AD6002E41F4 /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
+		5FA0032D1F0B5AD6002E41F4 /* image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = image.m; sourceTree = "<group>"; };
+		5FA0032F1F0B75D7002E41F4 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		5FA003301F0B75D7002E41F4 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		F9B99FD01F092218008047F4 /* OC_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B99FD41F092218008047F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9B99FD61F092218008047F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +144,57 @@
 			path = PPBadgeView;
 			sourceTree = "<group>";
 		};
+		5F0CAA201F0A26C4006814D7 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RootViewController;
+			sourceTree = "<group>";
+		};
+		5F0CAA241F0A38C7006814D7 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				5F0CAA211F0A38BC006814D7 /* MineViewController.h */,
+				5F0CAA221F0A38BC006814D7 /* MineViewController.m */,
+			);
+			name = "我的";
+			sourceTree = "<group>";
+		};
+		5F0CAA251F0A3900006814D7 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		5FA003191F0B2CE2002E41F4 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				5FA0031A1F0B2D06002E41F4 /* UIImage+image.h */,
+				5FA0031B1F0B2D06002E41F4 /* UIImage+image.m */,
+				5FA0031D1F0B2EF7002E41F4 /* NSObject+Property.h */,
+				5FA0031E1F0B2EF7002E41F4 /* NSObject+Property.m */,
+				5FA003221F0B3803002E41F4 /* NSObject+ModelDic.h */,
+				5FA003231F0B3803002E41F4 /* NSObject+ModelDic.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		5FA003251F0B3B45002E41F4 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				5FA003261F0B3B56002E41F4 /* status.h */,
+				5FA003271F0B3B56002E41F4 /* status.m */,
+				5FA003291F0B475A002E41F4 /* user.h */,
+				5FA0032A1F0B475A002E41F4 /* user.m */,
+				5FA0032C1F0B5AD6002E41F4 /* image.h */,
+				5FA0032D1F0B5AD6002E41F4 /* image.m */,
+				5FA0032F1F0B75D7002E41F4 /* Movie.h */,
+				5FA003301F0B75D7002E41F4 /* Movie.m */,
+			);
+			name = runtime;
+			sourceTree = "<group>";
+		};
 		F9B99FC71F092218008047F4 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				F9B99FD41F092218008047F4 /* main.m */,
+				5FA003201F0B3457002E41F4 /* Property List.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,6 +273,7 @@
 		F9B9A00A1F09222A008047F4 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				5FA003191F0B2CE2002E41F4 /* category */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -199,6 +281,7 @@
 		F9B9A00B1F09222E008047F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5F0CAA241F0A38C7006814D7 /* 我的 */,
 				F9B9A0101F092680008047F4 /* 主页 */,
 			);
 			name = Controller;
@@ -208,6 +291,7 @@
 		F9B9A00C1F09223C008047F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5F0CAA251F0A3900006814D7 /* 我的 */,
 				5F0CAA121F0A0D0D006814D7 /* PPBadgeView */,
 				F9B9A00F1F0922EA008047F4 /* IntiniterScrollView */,
 			);
@@ -217,6 +301,9 @@
 		F9B9A00D1F092240008047F4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5FA003251F0B3B45002E41F4 /* runtime */,
+				5FA003161F0B285C002E41F4 /* Person.h */,
+				5FA003171F0B285C002E41F4 /* Person.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,6 +328,7 @@
 		F9B9A0101F092680008047F4 /* 主页 */ = {
 			isa = PBXGroup;
 			children = (
+				5F0CAA201F0A26C4006814D7 /* RootViewController */,
 				F9B99FD91F092218008047F4 /* ViewController.h */,
 				F9B99FDA1F092218008047F4 /* ViewController.m */,
 				F9D9838D1F0938A60041C661 /* HomeNAVController.h */,
@@ -360,6 +448,7 @@
 			files = (
 				F9B99FE61F09221A008047F4 /* LaunchScreen.storyboard in Resources */,
 				F9B99FE31F09221A008047F4 /* Assets.xcassets in Resources */,
+				5FA003211F0B3457002E41F4 /* Property List.plist in Resources */,
 				F9B99FDE1F092218008047F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,11 +474,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA0031C1F0B2D06002E41F4 /* UIImage+image.m in Sources */,
 				F9B99FDB1F092218008047F4 /* ViewController.m in Sources */,
+				5FA0031F1F0B2EF7002E41F4 /* NSObject+Property.m in Sources */,
+				5FA003311F0B75D7002E41F4 /* Movie.m in Sources */,
+				5FA0032E1F0B5AD6002E41F4 /* image.m in Sources */,
 				5F0CAA181F0A0EAC006814D7 /* UIView+PPBadgeView.m in Sources */,
 				F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */,
 				F9D9838F1F0938A60041C661 /* HomeNAVController.m in Sources */,
+				5FA003241F0B3803002E41F4 /* NSObject+ModelDic.m in Sources */,
+				5FA003281F0B3B56002E41F4 /* status.m in Sources */,
 				F9B99FE11F09221A008047F4 /* OC_Demo.xcdatamodeld in Sources */,
+				5FA0032B1F0B475A002E41F4 /* user.m in Sources */,
+				5F0CAA231F0A38BC006814D7 /* MineViewController.m in Sources */,
+				5FA003181F0B285C002E41F4 /* Person.m in Sources */,
 				5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */,
 				F9B9A0161F0927EF008047F4 /* ESPicPageView.m in Sources */,
 				5F0CAA1E1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m in Sources */,
@@ -545,7 +643,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = YPA8ZFWJMP;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = OC_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,7 +658,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = YPA8ZFWJMP;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = OC_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

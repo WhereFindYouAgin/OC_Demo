@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attitudes_count</key>
+	<integer>1</integer>
+	<key>comments_count</key>
+	<integer>0</integer>
+	<key>created_at</key>
+	<string>刚刚</string>
+	<key>idstr</key>
+	<string>3432534654565</string>
+	<key>pic_urls</key>
+	<array>
+		<dict>
+			<key>janes</key>
+			<string>https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2081137030,116076654&amp;fm=80&amp;w=179&amp;h=119&amp;img.JPEG</string>
+			<key>book</key>
+			<string>白开水</string>
+		</dict>
+	</array>
+	<key>reposts_count</key>
+	<integer>0</integer>
+	<key>source</key>
+	<string>来自即刻笔记</string>
+	<key>text</key>
+	<string>这是我见过的剪刀中，最丧心病狂的</string>
+	<key>user</key>
+	<dict>
+		<key>mbrank</key>
+		<integer>6</integer>
+		<key>mbtype</key>
+		<integer>12</integer>
+		<key>name</key>
+		<string>嘴巴笑抽筋了</string>
+		<key>proflie_image_url</key>
+		<string>http://upload.jianshu.io/users/upload_avatars/1454864/67d0f0755c1f.png?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120</string>
+		<key>vip</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
