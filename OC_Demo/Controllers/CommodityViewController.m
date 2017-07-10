@@ -9,6 +9,7 @@
 #import "CommodityViewController.h"
 
 #import "ShopTableViewController.h"
+#import "GiftViewController.h"
 
 
 @interface CommodityViewController ()
@@ -28,7 +29,9 @@
 }
 - (IBAction)ConlltionViewBtnClick:(id)sender {
     
-
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    GiftViewController  *gift = [storyBoard instantiateViewControllerWithIdentifier:@"gift"];
+    [self.navigationController pushViewController:gift animated:YES];
 }
 
 - (IBAction)tableVIewBtnClink:(UIButton *)sender {

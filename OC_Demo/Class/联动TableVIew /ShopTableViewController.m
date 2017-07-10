@@ -128,7 +128,6 @@ static CGFloat const kLeftTableViewWidth = 80.0;
         for (FoodModel *f_model in model.spus)
         {
             [datas addObject:f_model];
-            NSLog(@"%@",f_model.name);
 
         }
         //讲菜单 分批装进一个大的array

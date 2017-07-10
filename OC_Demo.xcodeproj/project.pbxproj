@@ -44,6 +44,8 @@
 		5FEC17501F134C23006DDFA5 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17421F134C23006DDFA5 /* UIView+WebCacheOperation.m */; };
 		5FEC17531F134C84006DDFA5 /* NSObject+Property2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17521F134C84006DDFA5 /* NSObject+Property2.m */; };
 		5FEC17561F1351F6006DDFA5 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17551F1351F6006DDFA5 /* CategoryModel.m */; };
+		5FEC175F1F136A16006DDFA5 /* GiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC175E1F136A16006DDFA5 /* GiftViewController.m */; };
+		5FEC17621F13784E006DDFA5 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17611F13784E006DDFA5 /* GiftCell.m */; };
 		F9B99FD51F092218008047F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD41F092218008047F4 /* main.m */; };
 		F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD71F092218008047F4 /* AppDelegate.m */; };
 		F9B99FDB1F092218008047F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FDA1F092218008047F4 /* ViewController.m */; };
@@ -149,6 +151,10 @@
 		5FEC17521F134C84006DDFA5 /* NSObject+Property2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property2.m"; sourceTree = "<group>"; };
 		5FEC17541F1351F6006DDFA5 /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
 		5FEC17551F1351F6006DDFA5 /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
+		5FEC175D1F136A16006DDFA5 /* GiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftViewController.h; sourceTree = "<group>"; };
+		5FEC175E1F136A16006DDFA5 /* GiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftViewController.m; sourceTree = "<group>"; };
+		5FEC17601F13784E006DDFA5 /* GiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCell.h; sourceTree = "<group>"; };
+		5FEC17611F13784E006DDFA5 /* GiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftCell.m; sourceTree = "<group>"; };
 		F9B99FD01F092218008047F4 /* OC_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B99FD41F092218008047F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9B99FD61F092218008047F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -274,6 +280,7 @@
 		5FEC17091F131A28006DDFA5 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				5FEC17581F136913006DDFA5 /* 联动collentionView */,
 				5FEC170A1F131A66006DDFA5 /* 联动TableVIew  */,
 			);
 			path = Class;
@@ -384,6 +391,49 @@
 				5FEC17421F134C23006DDFA5 /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		5FEC17581F136913006DDFA5 /* 联动collentionView */ = {
+			isa = PBXGroup;
+			children = (
+				5FEC175C1F136965006DDFA5 /* Model */,
+				5FEC175B1F136960006DDFA5 /* View */,
+				5FEC175A1F13695E006DDFA5 /* Controller */,
+				5FEC17591F13695B006DDFA5 /* Tool */,
+			);
+			path = "联动collentionView";
+			sourceTree = "<group>";
+		};
+		5FEC17591F13695B006DDFA5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		5FEC175A1F13695E006DDFA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FEC175D1F136A16006DDFA5 /* GiftViewController.h */,
+				5FEC175E1F136A16006DDFA5 /* GiftViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FEC175B1F136960006DDFA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FEC17601F13784E006DDFA5 /* GiftCell.h */,
+				5FEC17611F13784E006DDFA5 /* GiftCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FEC175C1F136965006DDFA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		F9B99FC71F092218008047F4 = {
@@ -696,6 +746,7 @@
 				5FEC174A1F134C23006DDFA5 /* SDWebImagePrefetcher.m in Sources */,
 				5FA003281F0B3B56002E41F4 /* status.m in Sources */,
 				F9B99FE11F09221A008047F4 /* OC_Demo.xcdatamodeld in Sources */,
+				5FEC175F1F136A16006DDFA5 /* GiftViewController.m in Sources */,
 				5FEC17501F134C23006DDFA5 /* UIView+WebCacheOperation.m in Sources */,
 				5FEC17151F131EBF006DDFA5 /* ShopTableViewController.m in Sources */,
 				5FA0032B1F0B475A002E41F4 /* user.m in Sources */,
@@ -711,6 +762,7 @@
 				5FEC17441F134C23006DDFA5 /* SDImageCache.m in Sources */,
 				5F0CAA151F0A0D71006814D7 /* PPBadgeLabel.m in Sources */,
 				F9B99FD51F092218008047F4 /* main.m in Sources */,
+				5FEC17621F13784E006DDFA5 /* GiftCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

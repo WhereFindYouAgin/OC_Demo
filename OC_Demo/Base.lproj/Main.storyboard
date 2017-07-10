@@ -146,11 +146,6 @@
                                     <action selector="ConlltionViewBtnClick:" destination="Vlt-qN-3pd" eventType="touchUpInside" id="2Ad-L5-LNx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtL-gS-tUY">
-                                <rect key="frame" x="189" y="74" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXR-Qi-4Pu">
                                 <rect key="frame" x="0.0" y="64" width="179.5" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -218,6 +213,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mc-pz-Ue8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3062" y="1594"/>
+        </scene>
+        <!--Gift View Controller-->
+        <scene sceneID="Exf-U2-Fue">
+            <objects>
+                <viewController storyboardIdentifier="gift" hidesBottomBarWhenPushed="YES" id="T1D-9I-CoT" customClass="GiftViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9cp-Ca-iMj"/>
+                        <viewControllerLayoutGuide type="bottom" id="hGB-C7-xDQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A0i-Kv-bcM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3m-2G-cKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3730" y="1593"/>
         </scene>
     </scenes>
     <resources>
