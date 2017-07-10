@@ -45,6 +45,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;//防止出现scrollVIew的镂空
+        
     
     NSArray *images = @[@"image_0", @"image_1", @"image_2", @"image_3", @"image_4"];
     ESPicPageView *eSPicPageView = [[ESPicPageView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_WIDTH / 2)];
@@ -70,11 +71,11 @@
 //    NSObject *objc = [[NSObject alloc] init];
 //    objc.name = @"123";
 //    NSLog(@"runtime动态添加属性name==%@",objc.name);
-    //NSLog(@"%@", self.statusDic);
+  //  NSLog(@"%@", self.statusDic);
    
     
     status *sta = [status modelWithDict4:self.statusDic];
-    NSLog(@"%@",sta);
+  //  NSLog(@"%@",sta);
     
     [p performSelector:@selector(run1:) withObject:@10];
     self.xiaoMing = [[Person alloc] init];
@@ -85,20 +86,20 @@
     objc_property_t *propertyList = class_copyPropertyList([self class], &count);
     for (unsigned int i=0; i<count; i++) {
         const char *propertyName = property_getName(propertyList[i]);
-        NSLog(@"property---->%@", [NSString stringWithUTF8String:propertyName]);
+       // NSLog(@"property---->%@", [NSString stringWithUTF8String:propertyName]);
     }
     
     Method *methodList = class_copyMethodList([self class], &count);
     for (unsigned int i = 0; i<count; i++) {
         Method method = methodList[i];
-        NSLog(@"method---->%@", NSStringFromSelector(method_getName(method)));
+       // NSLog(@"method---->%@", NSStringFromSelector(method_getName(method)));
     }
     //成员变量
     Ivar *ivarList = class_copyIvarList([self class], &count);
     for (unsigned int i = 0; i<count; i++) {
         Ivar myIvar = ivarList[i];
         const char *ivarName = ivar_getName(myIvar);
-        NSLog(@"Ivar---->%@", [NSString stringWithUTF8String:ivarName]);
+       // NSLog(@"Ivar---->%@", [NSString stringWithUTF8String:ivarName]);
     }
     
     //协议
@@ -106,12 +107,11 @@
     for (unsigned int i = 0; i<count; i++) {
         Protocol *myProtocal = protocolList[i];
         const char *protocolName = protocol_getName(myProtocal);
-        NSLog(@"protocol---->%@", [NSString stringWithUTF8String:protocolName]);
+        //NSLog(@"protocol---->%@", [NSString stringWithUTF8String:protocolName]);
     }
     
     [self getClassMethod];
 }
-
 
 
 
@@ -139,7 +139,7 @@
             break;
         }
     }
-    NSLog(@"XiaoMing's age is %@",self.xiaoMing.age);
+  //  NSLog(@"XiaoMing's age is %@",self.xiaoMing.age);
 }
 
 @end

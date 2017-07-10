@@ -9,6 +9,9 @@
 #import "NSObject+ModelDic.h"
 #import <objc/message.h>
 
+
+
+
 @implementation NSObject (ModelDic)
 
 + (instancetype)modelWithDict:(NSDictionary *)dict{
