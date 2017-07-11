@@ -12,6 +12,7 @@
 		5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA1A1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m */; };
 		5F0CAA1E1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA1D1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m */; };
 		5F0CAA231F0A38BC006814D7 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA221F0A38BC006814D7 /* MineViewController.m */; };
+		5F9DD66B1F14A8B0005C0651 /* GiftFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DD66A1F14A8B0005C0651 /* GiftFlowLayout.m */; };
 		5FA003181F0B285C002E41F4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA003171F0B285C002E41F4 /* Person.m */; };
 		5FA0031C1F0B2D06002E41F4 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0031B1F0B2D06002E41F4 /* UIImage+image.m */; };
 		5FA0031F1F0B2EF7002E41F4 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0031E1F0B2EF7002E41F4 /* NSObject+Property.m */; };
@@ -46,6 +47,7 @@
 		5FEC17561F1351F6006DDFA5 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17551F1351F6006DDFA5 /* CategoryModel.m */; };
 		5FEC175F1F136A16006DDFA5 /* GiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC175E1F136A16006DDFA5 /* GiftViewController.m */; };
 		5FEC17621F13784E006DDFA5 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17611F13784E006DDFA5 /* GiftCell.m */; };
+		F94E1E441F139761005804DC /* GiftCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94E1E431F139761005804DC /* GiftCollectionHeaderView.m */; };
 		F9B99FD51F092218008047F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD41F092218008047F4 /* main.m */; };
 		F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD71F092218008047F4 /* AppDelegate.m */; };
 		F9B99FDB1F092218008047F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FDA1F092218008047F4 /* ViewController.m */; };
@@ -88,6 +90,8 @@
 		5F0CAA1F1F0A1B65006814D7 /* PPBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPBadgeView.h; sourceTree = "<group>"; };
 		5F0CAA211F0A38BC006814D7 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		5F0CAA221F0A38BC006814D7 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		5F9DD6691F14A8B0005C0651 /* GiftFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftFlowLayout.h; sourceTree = "<group>"; };
+		5F9DD66A1F14A8B0005C0651 /* GiftFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftFlowLayout.m; sourceTree = "<group>"; };
 		5FA003161F0B285C002E41F4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		5FA003171F0B285C002E41F4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		5FA0031A1F0B2D06002E41F4 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 		5FEC175E1F136A16006DDFA5 /* GiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftViewController.m; sourceTree = "<group>"; };
 		5FEC17601F13784E006DDFA5 /* GiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCell.h; sourceTree = "<group>"; };
 		5FEC17611F13784E006DDFA5 /* GiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftCell.m; sourceTree = "<group>"; };
+		F94E1E421F139761005804DC /* GiftCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCollectionHeaderView.h; sourceTree = "<group>"; };
+		F94E1E431F139761005804DC /* GiftCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftCollectionHeaderView.m; sourceTree = "<group>"; };
 		F9B99FD01F092218008047F4 /* OC_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B99FD41F092218008047F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9B99FD61F092218008047F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -407,6 +413,8 @@
 		5FEC17591F13695B006DDFA5 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				5F9DD6691F14A8B0005C0651 /* GiftFlowLayout.h */,
+				5F9DD66A1F14A8B0005C0651 /* GiftFlowLayout.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -425,6 +433,8 @@
 			children = (
 				5FEC17601F13784E006DDFA5 /* GiftCell.h */,
 				5FEC17611F13784E006DDFA5 /* GiftCell.m */,
+				F94E1E421F139761005804DC /* GiftCollectionHeaderView.h */,
+				F94E1E431F139761005804DC /* GiftCollectionHeaderView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -724,6 +734,7 @@
 				5FEC17461F134C23006DDFA5 /* SDWebImageDecoder.m in Sources */,
 				5FEC17121F131C6D006DDFA5 /* CommodityViewController.m in Sources */,
 				5FEC17491F134C23006DDFA5 /* SDWebImageManager.m in Sources */,
+				F94E1E441F139761005804DC /* GiftCollectionHeaderView.m in Sources */,
 				5FA0031C1F0B2D06002E41F4 /* UIImage+image.m in Sources */,
 				F9B99FDB1F092218008047F4 /* ViewController.m in Sources */,
 				5FEC171B1F132BD2006DDFA5 /* RightCell.m in Sources */,
@@ -755,6 +766,7 @@
 				5FEC17471F134C23006DDFA5 /* SDWebImageDownloader.m in Sources */,
 				5FEC174B1F134C23006DDFA5 /* UIButton+WebCache.m in Sources */,
 				5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */,
+				5F9DD66B1F14A8B0005C0651 /* GiftFlowLayout.m in Sources */,
 				5FEC17561F1351F6006DDFA5 /* CategoryModel.m in Sources */,
 				5FEC17431F134C23006DDFA5 /* NSData+ImageContentType.m in Sources */,
 				F9B9A0161F0927EF008047F4 /* ESPicPageView.m in Sources */,

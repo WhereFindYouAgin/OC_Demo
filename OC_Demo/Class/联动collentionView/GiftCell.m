@@ -19,12 +19,20 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
-        [self.contentView addSubview:label];
-        label.backgroundColor = [UIColor orangeColor];
-        _titleL = label;
+        [self setUp];
     }
     return self;
+}
+- (void)setUp{
+
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height/2)];
+    [self.contentView addSubview:label];
+    label.backgroundColor = [UIColor orangeColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    _titleL = label;
+    
+
 }
 
 - (void)setCName:(NSString *)cName{
