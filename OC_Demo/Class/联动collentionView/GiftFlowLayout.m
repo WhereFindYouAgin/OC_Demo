@@ -14,7 +14,7 @@
     // UICollectionViewLayoutAttributes：我称它为collectionView中的item（包括cell和header、footer这些）的《结构信息》
     // 截取到父类所返回的数组（里面放的是当前屏幕所能展示的item的结构信息），并转化成不可变数组
     NSMutableArray *superArray = [[super layoutAttributesForElementsInRect:rect] mutableCopy];
-    
+    //NSLog(@"%@", superArray);
     // 创建存索引的数组，无符号（正整数），无序（不能通过下标取值），不可重复（重复的话会自动过滤）
     NSMutableIndexSet *noneHeaderSections = [NSMutableIndexSet indexSet];
     
@@ -25,6 +25,7 @@
         if (attributes.representedElementCategory == UICollectionElementCategoryCell)
         {
             [noneHeaderSections addIndex:attributes.indexPath.section];
+            NSLog(@"%ld", attributes.indexPath.section);
         }
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0600C01F15BCB80033A295 /* CCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0600BF1F15BCB80033A295 /* CCategoryModel.m */; };
 		5F0CAA151F0A0D71006814D7 /* PPBadgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA141F0A0D71006814D7 /* PPBadgeLabel.m */; };
 		5F0CAA181F0A0EAC006814D7 /* UIView+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA171F0A0EAC006814D7 /* UIView+PPBadgeView.m */; };
 		5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA1A1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m */; };
@@ -79,6 +80,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F0600BE1F15BCB80033A295 /* CCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCategoryModel.h; sourceTree = "<group>"; };
+		5F0600BF1F15BCB80033A295 /* CCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCategoryModel.m; sourceTree = "<group>"; };
 		5F0CAA131F0A0D71006814D7 /* PPBadgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBadgeLabel.h; sourceTree = "<group>"; };
 		5F0CAA141F0A0D71006814D7 /* PPBadgeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBadgeLabel.m; sourceTree = "<group>"; };
 		5F0CAA161F0A0EAC006814D7 /* UIView+PPBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PPBadgeView.h"; sourceTree = "<group>"; };
@@ -413,8 +416,6 @@
 		5FEC17591F13695B006DDFA5 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				5F9DD6691F14A8B0005C0651 /* GiftFlowLayout.h */,
-				5F9DD66A1F14A8B0005C0651 /* GiftFlowLayout.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -431,6 +432,8 @@
 		5FEC175B1F136960006DDFA5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5F9DD6691F14A8B0005C0651 /* GiftFlowLayout.h */,
+				5F9DD66A1F14A8B0005C0651 /* GiftFlowLayout.m */,
 				5FEC17601F13784E006DDFA5 /* GiftCell.h */,
 				5FEC17611F13784E006DDFA5 /* GiftCell.m */,
 				F94E1E421F139761005804DC /* GiftCollectionHeaderView.h */,
@@ -442,6 +445,8 @@
 		5FEC175C1F136965006DDFA5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5F0600BE1F15BCB80033A295 /* CCategoryModel.h */,
+				5F0600BF1F15BCB80033A295 /* CCategoryModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -761,6 +766,7 @@
 				5FEC17501F134C23006DDFA5 /* UIView+WebCacheOperation.m in Sources */,
 				5FEC17151F131EBF006DDFA5 /* ShopTableViewController.m in Sources */,
 				5FA0032B1F0B475A002E41F4 /* user.m in Sources */,
+				5F0600C01F15BCB80033A295 /* CCategoryModel.m in Sources */,
 				5F0CAA231F0A38BC006814D7 /* MineViewController.m in Sources */,
 				5FA003181F0B285C002E41F4 /* Person.m in Sources */,
 				5FEC17471F134C23006DDFA5 /* SDWebImageDownloader.m in Sources */,

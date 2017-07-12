@@ -12,6 +12,7 @@
 #import "GiftCell.h"
 #import "GiftCollectionHeaderView.h"
 #import "GiftFlowLayout.h"
+#import "CCategoryModel.h"
 
 @interface GiftViewController ()<UITableViewDelegate, UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>{
     NSInteger _selectIndex;
@@ -20,6 +21,12 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
+@property (nonatomic, strong) NSMutableArray *collectionDatas;
+
+
+
+
 @property (nonatomic, strong) GiftFlowLayout *flowLayout;
 
 
@@ -44,6 +51,8 @@ static NSString *const collentionFootIdentifier = @"GiftCollectionFooterView";
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kLeftTableViewWidth, SCREEN_HEIGHT)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.tableFooterView = [UIView new];
+        _tableView.rowHeight = 55;
         _tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         _tableView.tableFooterView = [UIView new];
         _tableView.showsVerticalScrollIndicator = NO;
@@ -58,9 +67,6 @@ static NSString *const collentionFootIdentifier = @"GiftCollectionFooterView";
 
     if (_flowLayout == nil) {
         _flowLayout = [[GiftFlowLayout alloc] init];
-        //设置每个item的大小为100*100
-        _flowLayout.itemSize = CGSizeMake((SCREEN_WIDTH -kLeftTableViewWidth - 4 * kCollectionViewMargin) /3 , (SCREEN_WIDTH - kLeftTableViewWidth - 4 * kCollectionViewMargin) /3 );
-        
         _flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
         _flowLayout.minimumInteritemSpacing = 0;
         _flowLayout.minimumLineSpacing = 2;
@@ -89,6 +95,21 @@ static NSString *const collentionFootIdentifier = @"GiftCollectionFooterView";
     return _collectionView;
 }
 
+- (NSMutableArray *)collectionDatas
+{
+    if (_collectionDatas == nil) {
+        _collectionDatas = [NSMutableArray array];
+    }
+    return _collectionDatas;
+}
+
+- (NSMutableArray *)dataSource
+{
+    if (_dataSource == nil) {
+        _dataSource = [NSMutableArray array];
+    }
+    return _dataSource;
+}
 #pragma mark -- Life Style
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -100,6 +121,26 @@ static NSString *const collentionFootIdentifier = @"GiftCollectionFooterView";
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.tableView];
     [self.view addSubview:self.collectionView];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"liwushuo.json" ofType:nil];
+    
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    NSArray *categories = dict[@"data"][@"categories"];
+    for (NSDictionary *dic in categories) {
+        CCategoryModel *model = [CCategoryModel objectWithDictionary4:dic];
+        [self.dataSource addObject:model];
+        NSMutableArray *subArr = [NSMutableArray array];
+        for (SubcategoryModel *subModel in model.subcategories) {
+            [subArr addObject:subModel];
+        }
+        [self.collectionDatas addObject:subArr];
+    }
+    
+    [self.tableView reloadData];
+    [self.collectionView reloadData];
+    [self selectRowAtIndexPath:0];
 }
 
 /*********************************** tableView***********************************/
@@ -107,7 +148,7 @@ static NSString *const collentionFootIdentifier = @"GiftCollectionFooterView";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return 20;
+    return self.dataSource.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -118,8 +159,8 @@ static NSString *const collentionFootIdentifier = @"GiftCollectionFooterView";
         if (!cell) {
             cell = [[LeftCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
         }
-    
-        cell.name = [NSString stringWithFormat:@"类别:%ld", indexPath.row];
+        CCategoryModel *model = self.dataSource[indexPath.row];
+        cell.name = model.name;
         return cell;
         
     return cell;
@@ -152,21 +193,29 @@ static NSString *const collentionFootIdentifier = @"GiftCollectionFooterView";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
 
-    return 20;
+    return self.dataSource.count;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 9;
+    NSArray * subArr = self.collectionDatas[section];
+    return subArr.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
     GiftCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collentionViewIdentifier forIndexPath:indexPath];
-    cell.cName = [NSString stringWithFormat:@"商品商品%ld",indexPath.row];
+    NSArray * subArr = self.collectionDatas[indexPath.section];
+    cell.model = subArr[indexPath.row];
     return cell;
 }
 
+//设置每个Item的大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+
+    return CGSizeMake((SCREEN_WIDTH - kLeftTableViewWidth - 4 * kCollectionViewMargin) / 3,
+                      (SCREEN_WIDTH - kLeftTableViewWidth - 4 * kCollectionViewMargin) / 3 + 30);
+}
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
            viewForSupplementaryElementOfKind:(NSString *)kind
                                  atIndexPath:(NSIndexPath *)indexPath
@@ -174,14 +223,14 @@ static NSString *const collentionFootIdentifier = @"GiftCollectionFooterView";
 
     if (kind == UICollectionElementKindSectionFooter) {
         UICollectionReusableView *footer = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:collentionFootIdentifier forIndexPath:indexPath];
-        
         return footer;
     }else{
         GiftCollectionHeaderView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                                             withReuseIdentifier:collentionHeaderIdentifier
                                                                                    forIndexPath:indexPath];
         
-        view.giftHeaderName = [NSString stringWithFormat:@"类别2⃣️%ld", indexPath.section];
+        CCategoryModel *model = self.dataSource[indexPath.section];
+        view.giftHeaderName = model.name;
         return view;
     }
 

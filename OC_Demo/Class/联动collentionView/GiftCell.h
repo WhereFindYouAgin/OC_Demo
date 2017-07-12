@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class SubcategoryModel;
 @interface GiftCell : UICollectionViewCell
 
 @property (nonatomic, copy) NSString *cName;
+@property (nonatomic, strong) SubcategoryModel *model;
+
 
 @end
