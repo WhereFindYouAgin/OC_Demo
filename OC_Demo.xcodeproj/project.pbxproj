@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5F0600C01F15BCB80033A295 /* CCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0600BF1F15BCB80033A295 /* CCategoryModel.m */; };
+		5F0600C51F16006A0033A295 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0600C41F16006A0033A295 /* UIView+Extension.m */; };
+		5F0600C91F1613040033A295 /* ShopCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0600C81F1613040033A295 /* ShopCarViewController.m */; };
+		5F0600CF1F161AF10033A295 /* ShopCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0600CD1F161AF10033A295 /* ShopCarCell.m */; };
+		5F0600D01F161AF10033A295 /* ShopCarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0600CE1F161AF10033A295 /* ShopCarCell.xib */; };
 		5F0CAA151F0A0D71006814D7 /* PPBadgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA141F0A0D71006814D7 /* PPBadgeLabel.m */; };
 		5F0CAA181F0A0EAC006814D7 /* UIView+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA171F0A0EAC006814D7 /* UIView+PPBadgeView.m */; };
 		5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CAA1A1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m */; };
@@ -82,6 +86,13 @@
 /* Begin PBXFileReference section */
 		5F0600BE1F15BCB80033A295 /* CCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCategoryModel.h; sourceTree = "<group>"; };
 		5F0600BF1F15BCB80033A295 /* CCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCategoryModel.m; sourceTree = "<group>"; };
+		5F0600C31F16006A0033A295 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		5F0600C41F16006A0033A295 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		5F0600C71F1613040033A295 /* ShopCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarViewController.h; sourceTree = "<group>"; };
+		5F0600C81F1613040033A295 /* ShopCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarViewController.m; sourceTree = "<group>"; };
+		5F0600CC1F161AF10033A295 /* ShopCarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarCell.h; sourceTree = "<group>"; };
+		5F0600CD1F161AF10033A295 /* ShopCarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarCell.m; sourceTree = "<group>"; };
+		5F0600CE1F161AF10033A295 /* ShopCarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCarCell.xib; sourceTree = "<group>"; };
 		5F0CAA131F0A0D71006814D7 /* PPBadgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBadgeLabel.h; sourceTree = "<group>"; };
 		5F0CAA141F0A0D71006814D7 /* PPBadgeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBadgeLabel.m; sourceTree = "<group>"; };
 		5F0CAA161F0A0EAC006814D7 /* UIView+PPBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PPBadgeView.h"; sourceTree = "<group>"; };
@@ -212,6 +223,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0600C11F1600130033A295 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				5FA0031A1F0B2D06002E41F4 /* UIImage+image.h */,
+				5FA0031B1F0B2D06002E41F4 /* UIImage+image.m */,
+				5FA0031D1F0B2EF7002E41F4 /* NSObject+Property.h */,
+				5FA0031E1F0B2EF7002E41F4 /* NSObject+Property.m */,
+				5FA003221F0B3803002E41F4 /* NSObject+ModelDic.h */,
+				5FA003231F0B3803002E41F4 /* NSObject+ModelDic.m */,
+			);
+			name = runtime;
+			sourceTree = "<group>";
+		};
+		5F0600C21F1600280033A295 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F0600C31F16006A0033A295 /* UIView+Extension.h */,
+				5F0600C41F16006A0033A295 /* UIView+Extension.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5F0600C61F1612D40033A295 /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				5F0600C71F1613040033A295 /* ShopCarViewController.h */,
+				5F0600C81F1613040033A295 /* ShopCarViewController.m */,
+			);
+			name = "购物车";
+			sourceTree = "<group>";
+		};
+		5F0600CA1F16152D0033A295 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		5F0600CB1F161ABC0033A295 /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				5F0600CC1F161AF10033A295 /* ShopCarCell.h */,
+				5F0600CD1F161AF10033A295 /* ShopCarCell.m */,
+				5F0600CE1F161AF10033A295 /* ShopCarCell.xib */,
+			);
+			name = "购物车";
+			sourceTree = "<group>";
+		};
 		5F0CAA121F0A0D0D006814D7 /* PPBadgeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,12 +313,8 @@
 		5FA003191F0B2CE2002E41F4 /* category */ = {
 			isa = PBXGroup;
 			children = (
-				5FA0031A1F0B2D06002E41F4 /* UIImage+image.h */,
-				5FA0031B1F0B2D06002E41F4 /* UIImage+image.m */,
-				5FA0031D1F0B2EF7002E41F4 /* NSObject+Property.h */,
-				5FA0031E1F0B2EF7002E41F4 /* NSObject+Property.m */,
-				5FA003221F0B3803002E41F4 /* NSObject+ModelDic.h */,
-				5FA003231F0B3803002E41F4 /* NSObject+ModelDic.m */,
+				5F0600C21F1600280033A295 /* View */,
+				5F0600C11F1600130033A295 /* runtime */,
 			);
 			name = category;
 			sourceTree = "<group>";
@@ -277,13 +332,6 @@
 				5FA003301F0B75D7002E41F4 /* Movie.m */,
 			);
 			name = runtime;
-			sourceTree = "<group>";
-		};
-		5FAEA9B41F0C8D9B00DCE5A1 /* 抽屉效果 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "抽屉效果";
 			sourceTree = "<group>";
 		};
 		5FEC17091F131A28006DDFA5 /* Class */ = {
@@ -530,6 +578,7 @@
 		F9B9A00A1F09222A008047F4 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				5F0600CA1F16152D0033A295 /* Lib */,
 				5FA003191F0B2CE2002E41F4 /* category */,
 			);
 			path = Tool;
@@ -538,8 +587,8 @@
 		F9B9A00B1F09222E008047F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5F0600C61F1612D40033A295 /* 购物车 */,
 				5FEC170F1F131C1B006DDFA5 /* 商品 */,
-				5FAEA9B41F0C8D9B00DCE5A1 /* 抽屉效果 */,
 				5F0CAA241F0A38C7006814D7 /* 我的 */,
 				F9B9A0101F092680008047F4 /* 主页 */,
 			);
@@ -550,6 +599,7 @@
 		F9B9A00C1F09223C008047F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5F0600CB1F161ABC0033A295 /* 购物车 */,
 				5F0CAA251F0A3900006814D7 /* 我的 */,
 				5F0CAA121F0A0D0D006814D7 /* PPBadgeView */,
 				F9B9A00F1F0922EA008047F4 /* IntiniterScrollView */,
@@ -711,6 +761,7 @@
 				5FEC17231F134BB4006DDFA5 /* liwushuo.json in Resources */,
 				F9B99FE31F09221A008047F4 /* Assets.xcassets in Resources */,
 				5FA003211F0B3457002E41F4 /* Property List.plist in Resources */,
+				5F0600D01F161AF10033A295 /* ShopCarCell.xib in Resources */,
 				F9B99FDE1F092218008047F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,6 +802,7 @@
 				5FEC171E1F13302E006DDFA5 /* RightHeaderView.m in Sources */,
 				5FA003311F0B75D7002E41F4 /* Movie.m in Sources */,
 				5FEC174F1F134C23006DDFA5 /* UIImageView+WebCache.m in Sources */,
+				5F0600C91F1613040033A295 /* ShopCarViewController.m in Sources */,
 				5FA0032E1F0B5AD6002E41F4 /* image.m in Sources */,
 				5F0CAA181F0A0EAC006814D7 /* UIView+PPBadgeView.m in Sources */,
 				F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */,
@@ -759,6 +811,7 @@
 				5FEC174D1F134C23006DDFA5 /* UIImage+MultiFormat.m in Sources */,
 				5FEC174E1F134C23006DDFA5 /* UIImageView+HighlightedWebCache.m in Sources */,
 				5FA003241F0B3803002E41F4 /* NSObject+ModelDic.m in Sources */,
+				5F0600CF1F161AF10033A295 /* ShopCarCell.m in Sources */,
 				5FEC174A1F134C23006DDFA5 /* SDWebImagePrefetcher.m in Sources */,
 				5FA003281F0B3B56002E41F4 /* status.m in Sources */,
 				F9B99FE11F09221A008047F4 /* OC_Demo.xcdatamodeld in Sources */,
@@ -778,6 +831,7 @@
 				F9B9A0161F0927EF008047F4 /* ESPicPageView.m in Sources */,
 				5F0CAA1E1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m in Sources */,
 				5FEC17441F134C23006DDFA5 /* SDImageCache.m in Sources */,
+				5F0600C51F16006A0033A295 /* UIView+Extension.m in Sources */,
 				5F0CAA151F0A0D71006814D7 /* PPBadgeLabel.m in Sources */,
 				F9B99FD51F092218008047F4 /* main.m in Sources */,
 				5FEC17621F13784E006DDFA5 /* GiftCell.m in Sources */,

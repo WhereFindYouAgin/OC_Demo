@@ -25,7 +25,7 @@
         if (attributes.representedElementCategory == UICollectionElementCategoryCell)
         {
             [noneHeaderSections addIndex:attributes.indexPath.section];
-            NSLog(@"%ld", attributes.indexPath.section);
+          //  NSLog(@"%ld", attributes.indexPath.section);
         }
     }
     
