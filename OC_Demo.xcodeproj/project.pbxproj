@@ -52,6 +52,7 @@
 		5FEC17561F1351F6006DDFA5 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17551F1351F6006DDFA5 /* CategoryModel.m */; };
 		5FEC175F1F136A16006DDFA5 /* GiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC175E1F136A16006DDFA5 /* GiftViewController.m */; };
 		5FEC17621F13784E006DDFA5 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17611F13784E006DDFA5 /* GiftCell.m */; };
+		F91C128E1F1664060091D1FB /* ScrollMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F91C128D1F1664060091D1FB /* ScrollMenuView.m */; };
 		F94E1E441F139761005804DC /* GiftCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94E1E431F139761005804DC /* GiftCollectionHeaderView.m */; };
 		F9B99FD51F092218008047F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD41F092218008047F4 /* main.m */; };
 		F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD71F092218008047F4 /* AppDelegate.m */; };
@@ -173,6 +174,8 @@
 		5FEC175E1F136A16006DDFA5 /* GiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftViewController.m; sourceTree = "<group>"; };
 		5FEC17601F13784E006DDFA5 /* GiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCell.h; sourceTree = "<group>"; };
 		5FEC17611F13784E006DDFA5 /* GiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftCell.m; sourceTree = "<group>"; };
+		F91C128C1F1664060091D1FB /* ScrollMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollMenuView.h; sourceTree = "<group>"; };
+		F91C128D1F1664060091D1FB /* ScrollMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollMenuView.m; sourceTree = "<group>"; };
 		F94E1E421F139761005804DC /* GiftCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCollectionHeaderView.h; sourceTree = "<group>"; };
 		F94E1E431F139761005804DC /* GiftCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftCollectionHeaderView.m; sourceTree = "<group>"; };
 		F9B99FD01F092218008047F4 /* OC_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,6 +293,10 @@
 		5F0CAA201F0A26C4006814D7 /* RootViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F9D9838D1F0938A60041C661 /* HomeNAVController.h */,
+				F9D9838E1F0938A60041C661 /* HomeNAVController.m */,
+				F9B99FD91F092218008047F4 /* ViewController.h */,
+				F9B99FDA1F092218008047F4 /* ViewController.m */,
 			);
 			name = RootViewController;
 			sourceTree = "<group>";
@@ -308,6 +315,15 @@
 			children = (
 			);
 			path = "我的";
+			sourceTree = "<group>";
+		};
+		5F7A8D5C1F17199A00673592 /* 滚动菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				F91C128C1F1664060091D1FB /* ScrollMenuView.h */,
+				F91C128D1F1664060091D1FB /* ScrollMenuView.m */,
+			);
+			name = "滚动菜单";
 			sourceTree = "<group>";
 		};
 		5FA003191F0B2CE2002E41F4 /* category */ = {
@@ -499,6 +515,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		F91C128B1F1663AF0091D1FB /* 主页 */ = {
+			isa = PBXGroup;
+			children = (
+				5F7A8D5C1F17199A00673592 /* 滚动菜单 */,
+			);
+			name = "主页";
+			sourceTree = "<group>";
+		};
 		F9B99FC71F092218008047F4 = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +623,7 @@
 		F9B9A00C1F09223C008047F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F91C128B1F1663AF0091D1FB /* 主页 */,
 				5F0600CB1F161ABC0033A295 /* 购物车 */,
 				5F0CAA251F0A3900006814D7 /* 我的 */,
 				5F0CAA121F0A0D0D006814D7 /* PPBadgeView */,
@@ -639,10 +664,6 @@
 			isa = PBXGroup;
 			children = (
 				5F0CAA201F0A26C4006814D7 /* RootViewController */,
-				F9B99FD91F092218008047F4 /* ViewController.h */,
-				F9B99FDA1F092218008047F4 /* ViewController.m */,
-				F9D9838D1F0938A60041C661 /* HomeNAVController.h */,
-				F9D9838E1F0938A60041C661 /* HomeNAVController.m */,
 			);
 			name = "主页";
 			sourceTree = "<group>";
@@ -823,6 +844,7 @@
 				5F0CAA231F0A38BC006814D7 /* MineViewController.m in Sources */,
 				5FA003181F0B285C002E41F4 /* Person.m in Sources */,
 				5FEC17471F134C23006DDFA5 /* SDWebImageDownloader.m in Sources */,
+				F91C128E1F1664060091D1FB /* ScrollMenuView.m in Sources */,
 				5FEC174B1F134C23006DDFA5 /* UIButton+WebCache.m in Sources */,
 				5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */,
 				5F9DD66B1F14A8B0005C0651 /* GiftFlowLayout.m in Sources */,

@@ -18,12 +18,13 @@
 #import "NSObject+Property.h"
 #import "NSObject+ModelDic.h"
 #import "status.h"
+#import "ScrollMenuView.h"
 
 
 
 #import <objc/message.h>
 
-@interface ViewController ()<UITextFieldDelegate>
+@interface ViewController ()<UITextFieldDelegate, ScrollMenuViewDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *leftItem;
 @property (nonatomic, strong) NSDictionary *statusDic;
 @property (nonatomic, strong) Person *xiaoMing;
@@ -45,10 +46,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;//防止出现scrollVIew的镂空
-        
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     NSArray *images = @[@"image_0", @"image_1", @"image_2", @"image_3", @"image_4"];
-    ESPicPageView *eSPicPageView = [[ESPicPageView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_WIDTH / 2)];
+    ESPicPageView *eSPicPageView = [[ESPicPageView alloc]initWithFrame:CGRectMake(0, 30, SCREEN_WIDTH, SCREEN_WIDTH / 2)];
     eSPicPageView.images = images;
     [self.view addSubview:eSPicPageView];
     
@@ -111,7 +114,18 @@
     }
     
     [self getClassMethod];
+    [self setMenuScrollBtnView];
 }
+
+#pragma mark -- 设置一个滚动的菜单栏
+- (void)setMenuScrollBtnView{
+    NSArray *btnTitleArr = @[@"新闻",@"咨询",@"开心一刻",@"手机控",@"热点",@"南京",@"女人",@"视频"];
+    ScrollMenuView *scrollBtnMenu = [[ScrollMenuView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 30)];
+    scrollBtnMenu.titleArray = btnTitleArr;
+    scrollBtnMenu.menuViewdelegate = self;
+    [self.view addSubview:scrollBtnMenu];
+}
+
 
 
 
@@ -141,5 +155,11 @@
     }
   //  NSLog(@"XiaoMing's age is %@",self.xiaoMing.age);
 }
+
+#pragma mark -- ScrollMenuViewDelegate
+- (void)scrollMenuView:(ScrollMenuView *)scrollMenuView btnClickedIndex:(NSInteger)index{
+    NSLog(@"点击了%ld", index);
+}
+
 
 @end
