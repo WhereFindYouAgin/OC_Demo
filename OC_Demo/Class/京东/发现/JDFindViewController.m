@@ -1,32 +1,21 @@
 //
-//  ShopCarViewController.m
+//  JDFindViewController.m
 //  OC_Demo
 //
-//  Created by sll on 2017/7/12.
+//  Created by sll on 2017/7/17.
 //  Copyright © 2017年 LUOSU. All rights reserved.
 //
 
-#import "ShopCarViewController.h"
-#import "ShopCarCell.h"
+#import "JDFindViewController.h"
 
-#import "JDViewController.h"
-@interface ShopCarViewController ()<ShopCarCellDelegate>
+@interface JDFindViewController ()
 
 @end
 
-@implementation ShopCarViewController
+@implementation JDFindViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];//给navigationBar设置一个空的背景图片即可实现透明，而且标题按钮都在
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    //其实这个线也是image控制的。设为空即可
-    
-    //navigationBar是一个复合视图，它是有许多个控件组成的，那么我们就可以从他的内部入手
-    [[self.navigationController.navigationBar subviews] objectAtIndex:0].alpha = 0;//这里可以根据scrollView的偏移量来设置alpha就实现了渐变透明的效果
-    
-
-   
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -43,28 +32,24 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 15;
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    NSString *const shopCarID = @"shopCarID";
+    // Configure the cell...
     
-    ShopCarCell  *cell = [tableView dequeueReusableCellWithIdentifier:shopCarID];
-    if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"ShopCarCell" owner:self options:nil] firstObject];
-               [tableView registerNib:[UINib nibWithNibName:@"ShopCarCell" bundle:nil] forCellReuseIdentifier:shopCarID];
-    }
-    cell.delegate = self;
-    cell.carIndexPath = indexPath;
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -99,15 +84,6 @@
     return YES;
 }
 */
-
-
-#pragma mark -- ShopCarCellDelegate
-- (void)ShopCarCell:(ShopCarCell *)cell didSlectButtn:(UIButton *)btn indePath:(NSIndexPath *)indexPath{
-
-    [UIApplication sharedApplication].keyWindow.rootViewController = [[JDViewController alloc] init];
-    NSLog(@"点击了%ld",indexPath.row);
-}
-
 
 /*
 #pragma mark - Navigation

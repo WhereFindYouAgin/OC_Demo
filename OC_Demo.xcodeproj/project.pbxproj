@@ -27,6 +27,14 @@
 		5FA0032B1F0B475A002E41F4 /* user.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0032A1F0B475A002E41F4 /* user.m */; };
 		5FA0032E1F0B5AD6002E41F4 /* image.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0032D1F0B5AD6002E41F4 /* image.m */; };
 		5FA003311F0B75D7002E41F4 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA003301F0B75D7002E41F4 /* Movie.m */; };
+		5FC6E5491F1C989E00BD6913 /* JDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6E5481F1C989E00BD6913 /* JDViewController.m */; };
+		5FC6E54C1F1C98DF00BD6913 /* JDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6E54B1F1C98DF00BD6913 /* JDNavigationController.m */; };
+		5FC6E54F1F1CA40D00BD6913 /* JDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6E54E1F1CA40D00BD6913 /* JDHomeViewController.m */; };
+		5FC6E5691F1CA66900BD6913 /* JDCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6E5681F1CA66900BD6913 /* JDCategoryViewController.m */; };
+		5FC6E56C1F1CA68C00BD6913 /* JDDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6E56B1F1CA68C00BD6913 /* JDDetailsViewController.m */; };
+		5FC6E56F1F1CA6B600BD6913 /* JDFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6E56E1F1CA6B600BD6913 /* JDFindViewController.m */; };
+		5FC6E5721F1CA6D800BD6913 /* JDCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6E5711F1CA6D800BD6913 /* JDCartViewController.m */; };
+		5FC6E5751F1CA72500BD6913 /* JDMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6E5741F1CA72500BD6913 /* JDMyViewController.m */; };
 		5FEC17121F131C6D006DDFA5 /* CommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17111F131C6D006DDFA5 /* CommodityViewController.m */; };
 		5FEC17151F131EBF006DDFA5 /* ShopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17141F131EBF006DDFA5 /* ShopTableViewController.m */; };
 		5FEC17181F132682006DDFA5 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC17171F132682006DDFA5 /* LeftCell.m */; };
@@ -124,6 +132,22 @@
 		5FA0032D1F0B5AD6002E41F4 /* image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = image.m; sourceTree = "<group>"; };
 		5FA0032F1F0B75D7002E41F4 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		5FA003301F0B75D7002E41F4 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		5FC6E5471F1C989E00BD6913 /* JDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDViewController.h; sourceTree = "<group>"; };
+		5FC6E5481F1C989E00BD6913 /* JDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDViewController.m; sourceTree = "<group>"; };
+		5FC6E54A1F1C98DF00BD6913 /* JDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNavigationController.h; sourceTree = "<group>"; };
+		5FC6E54B1F1C98DF00BD6913 /* JDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNavigationController.m; sourceTree = "<group>"; };
+		5FC6E54D1F1CA40D00BD6913 /* JDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDHomeViewController.h; sourceTree = "<group>"; };
+		5FC6E54E1F1CA40D00BD6913 /* JDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDHomeViewController.m; sourceTree = "<group>"; };
+		5FC6E5671F1CA66900BD6913 /* JDCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCategoryViewController.h; sourceTree = "<group>"; };
+		5FC6E5681F1CA66900BD6913 /* JDCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCategoryViewController.m; sourceTree = "<group>"; };
+		5FC6E56A1F1CA68C00BD6913 /* JDDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDetailsViewController.h; sourceTree = "<group>"; };
+		5FC6E56B1F1CA68C00BD6913 /* JDDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDetailsViewController.m; sourceTree = "<group>"; };
+		5FC6E56D1F1CA6B600BD6913 /* JDFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFindViewController.h; sourceTree = "<group>"; };
+		5FC6E56E1F1CA6B600BD6913 /* JDFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFindViewController.m; sourceTree = "<group>"; };
+		5FC6E5701F1CA6D800BD6913 /* JDCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCartViewController.h; sourceTree = "<group>"; };
+		5FC6E5711F1CA6D800BD6913 /* JDCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCartViewController.m; sourceTree = "<group>"; };
+		5FC6E5731F1CA72500BD6913 /* JDMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMyViewController.h; sourceTree = "<group>"; };
+		5FC6E5741F1CA72500BD6913 /* JDMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMyViewController.m; sourceTree = "<group>"; };
 		5FEC17101F131C6D006DDFA5 /* CommodityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityViewController.h; sourceTree = "<group>"; };
 		5FEC17111F131C6D006DDFA5 /* CommodityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityViewController.m; sourceTree = "<group>"; };
 		5FEC17131F131EBF006DDFA5 /* ShopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopTableViewController.h; sourceTree = "<group>"; };
@@ -350,9 +374,313 @@
 			name = runtime;
 			sourceTree = "<group>";
 		};
+		5FC6E5371F1C92C700BD6913 /* 京东 */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5431F1C956800BD6913 /* Base */,
+				5FC6E5421F1C956600BD6913 /* 首页 */,
+				5FC6E5411F1C956400BD6913 /* 分类 */,
+				5FC6E5401F1C956200BD6913 /* 商品 */,
+				5FC6E53F1F1C956100BD6913 /* 发现 */,
+				5FC6E53D1F1C955C00BD6913 /* 购物车 */,
+				5FC6E53C1F1C951000BD6913 /* 我的 */,
+				5FC6E53B1F1C94D400BD6913 /* Main */,
+				5FC6E53A1F1C94AC00BD6913 /* DataBase */,
+				5FC6E5391F1C94A700BD6913 /* Handler */,
+				5FC6E5381F1C949800BD6913 /* Storage */,
+				5FC6E5451F1C964700BD6913 /* Cateory */,
+				5FC6E5441F1C964500BD6913 /* Utils */,
+				5FC6E5461F1C964B00BD6913 /* Resource */,
+			);
+			path = "京东";
+			sourceTree = "<group>";
+		};
+		5FC6E5381F1C949800BD6913 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		5FC6E5391F1C94A700BD6913 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		5FC6E53A1F1C94AC00BD6913 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		5FC6E53B1F1C94D400BD6913 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5661F1CA60E00BD6913 /* Model */,
+				5FC6E5651F1CA60A00BD6913 /* View */,
+				5FC6E5641F1CA60800BD6913 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5FC6E53C1F1C951000BD6913 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5631F1CA60100BD6913 /* Model */,
+				5FC6E5621F1CA60000BD6913 /* View */,
+				5FC6E5611F1CA5FF00BD6913 /* Controller */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		5FC6E53D1F1C955C00BD6913 /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5601F1CA5FD00BD6913 /* Model */,
+				5FC6E55F1F1CA5FB00BD6913 /* View */,
+				5FC6E55E1F1CA5FA00BD6913 /* Controller */,
+			);
+			path = "购物车";
+			sourceTree = "<group>";
+		};
+		5FC6E53F1F1C956100BD6913 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E55D1F1CA5E700BD6913 /* Model */,
+				5FC6E55C1F1CA5E500BD6913 /* View */,
+				5FC6E55B1F1CA5DD00BD6913 /* Controller */,
+			);
+			path = "发现";
+			sourceTree = "<group>";
+		};
+		5FC6E5401F1C956200BD6913 /* 商品 */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E55A1F1CA4B500BD6913 /* Model */,
+				5FC6E5591F1CA4B400BD6913 /* View */,
+				5FC6E5581F1CA4B200BD6913 /* Contoller */,
+			);
+			path = "商品";
+			sourceTree = "<group>";
+		};
+		5FC6E5411F1C956400BD6913 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5571F1CA46800BD6913 /* Model */,
+				5FC6E5561F1CA46600BD6913 /* View */,
+				5FC6E5551F1CA46300BD6913 /* Controller */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		5FC6E5421F1C956600BD6913 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5541F1CA42A00BD6913 /* Model */,
+				5FC6E5531F1CA42800BD6913 /* View */,
+				5FC6E5501F1CA41D00BD6913 /* Controller */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		5FC6E5431F1C956800BD6913 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5FC6E5441F1C964500BD6913 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5FC6E5451F1C964700BD6913 /* Cateory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cateory;
+			sourceTree = "<group>";
+		};
+		5FC6E5461F1C964B00BD6913 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5FC6E5501F1CA41D00BD6913 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E54D1F1CA40D00BD6913 /* JDHomeViewController.h */,
+				5FC6E54E1F1CA40D00BD6913 /* JDHomeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FC6E5531F1CA42800BD6913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FC6E5541F1CA42A00BD6913 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FC6E5551F1CA46300BD6913 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5671F1CA66900BD6913 /* JDCategoryViewController.h */,
+				5FC6E5681F1CA66900BD6913 /* JDCategoryViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FC6E5561F1CA46600BD6913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FC6E5571F1CA46800BD6913 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FC6E5581F1CA4B200BD6913 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E56A1F1CA68C00BD6913 /* JDDetailsViewController.h */,
+				5FC6E56B1F1CA68C00BD6913 /* JDDetailsViewController.m */,
+			);
+			name = Contoller;
+			sourceTree = "<group>";
+		};
+		5FC6E5591F1CA4B400BD6913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FC6E55A1F1CA4B500BD6913 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FC6E55B1F1CA5DD00BD6913 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E56D1F1CA6B600BD6913 /* JDFindViewController.h */,
+				5FC6E56E1F1CA6B600BD6913 /* JDFindViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FC6E55C1F1CA5E500BD6913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FC6E55D1F1CA5E700BD6913 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FC6E55E1F1CA5FA00BD6913 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5701F1CA6D800BD6913 /* JDCartViewController.h */,
+				5FC6E5711F1CA6D800BD6913 /* JDCartViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FC6E55F1F1CA5FB00BD6913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FC6E5601F1CA5FD00BD6913 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FC6E5611F1CA5FF00BD6913 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5731F1CA72500BD6913 /* JDMyViewController.h */,
+				5FC6E5741F1CA72500BD6913 /* JDMyViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FC6E5621F1CA60000BD6913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FC6E5631F1CA60100BD6913 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FC6E5641F1CA60800BD6913 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6E5471F1C989E00BD6913 /* JDViewController.h */,
+				5FC6E5481F1C989E00BD6913 /* JDViewController.m */,
+				5FC6E54A1F1C98DF00BD6913 /* JDNavigationController.h */,
+				5FC6E54B1F1C98DF00BD6913 /* JDNavigationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FC6E5651F1CA60A00BD6913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FC6E5661F1CA60E00BD6913 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		5FEC17091F131A28006DDFA5 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				5FC6E5371F1C92C700BD6913 /* 京东 */,
 				5FEC17581F136913006DDFA5 /* 联动collentionView */,
 				5FEC170A1F131A66006DDFA5 /* 联动TableVIew  */,
 			);
@@ -815,6 +1143,7 @@
 				5FA0031C1F0B2D06002E41F4 /* UIImage+image.m in Sources */,
 				F9B99FDB1F092218008047F4 /* ViewController.m in Sources */,
 				5FEC171B1F132BD2006DDFA5 /* RightCell.m in Sources */,
+				5FC6E54F1F1CA40D00BD6913 /* JDHomeViewController.m in Sources */,
 				5FEC17451F134C23006DDFA5 /* SDWebImageCompat.m in Sources */,
 				5FEC17481F134C23006DDFA5 /* SDWebImageDownloaderOperation.m in Sources */,
 				5FA0031F1F0B2EF7002E41F4 /* NSObject+Property.m in Sources */,
@@ -839,6 +1168,9 @@
 				5FEC175F1F136A16006DDFA5 /* GiftViewController.m in Sources */,
 				5FEC17501F134C23006DDFA5 /* UIView+WebCacheOperation.m in Sources */,
 				5FEC17151F131EBF006DDFA5 /* ShopTableViewController.m in Sources */,
+				5FC6E56F1F1CA6B600BD6913 /* JDFindViewController.m in Sources */,
+				5FC6E5691F1CA66900BD6913 /* JDCategoryViewController.m in Sources */,
+				5FC6E56C1F1CA68C00BD6913 /* JDDetailsViewController.m in Sources */,
 				5FA0032B1F0B475A002E41F4 /* user.m in Sources */,
 				5F0600C01F15BCB80033A295 /* CCategoryModel.m in Sources */,
 				5F0CAA231F0A38BC006814D7 /* MineViewController.m in Sources */,
@@ -846,14 +1178,18 @@
 				5FEC17471F134C23006DDFA5 /* SDWebImageDownloader.m in Sources */,
 				F91C128E1F1664060091D1FB /* ScrollMenuView.m in Sources */,
 				5FEC174B1F134C23006DDFA5 /* UIButton+WebCache.m in Sources */,
+				5FC6E54C1F1C98DF00BD6913 /* JDNavigationController.m in Sources */,
 				5F0CAA1B1F0A17A7006814D7 /* UIBarButtonItem+PPBadgeView.m in Sources */,
 				5F9DD66B1F14A8B0005C0651 /* GiftFlowLayout.m in Sources */,
 				5FEC17561F1351F6006DDFA5 /* CategoryModel.m in Sources */,
 				5FEC17431F134C23006DDFA5 /* NSData+ImageContentType.m in Sources */,
 				F9B9A0161F0927EF008047F4 /* ESPicPageView.m in Sources */,
+				5FC6E5751F1CA72500BD6913 /* JDMyViewController.m in Sources */,
+				5FC6E5721F1CA6D800BD6913 /* JDCartViewController.m in Sources */,
 				5F0CAA1E1F0A1A05006814D7 /* UITabBarItem+PPBadgeView.m in Sources */,
 				5FEC17441F134C23006DDFA5 /* SDImageCache.m in Sources */,
 				5F0600C51F16006A0033A295 /* UIView+Extension.m in Sources */,
+				5FC6E5491F1C989E00BD6913 /* JDViewController.m in Sources */,
 				5F0CAA151F0A0D71006814D7 /* PPBadgeLabel.m in Sources */,
 				F9B99FD51F092218008047F4 /* main.m in Sources */,
 				5FEC17621F13784E006DDFA5 /* GiftCell.m in Sources */,

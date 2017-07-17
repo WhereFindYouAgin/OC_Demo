@@ -116,7 +116,13 @@
     [self getClassMethod];
     [self setMenuScrollBtnView];
 }
-
+- (int)test:(int)num
+{
+    while (num >= 10) {
+        num = num/10 + num%10;
+    }
+    return num;
+}
 #pragma mark -- 设置一个滚动的菜单栏
 - (void)setMenuScrollBtnView{
     NSArray *btnTitleArr = @[@"新闻",@"咨询",@"开心一刻",@"手机控",@"热点",@"南京",@"女人",@"视频"];
