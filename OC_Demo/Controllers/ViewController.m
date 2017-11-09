@@ -125,15 +125,12 @@
 }
 #pragma mark -- 设置一个滚动的菜单栏
 - (void)setMenuScrollBtnView{
-    NSArray *btnTitleArr = @[@"新闻",@"咨询",@"开心一刻",@"手机控",@"热点",@"南京",@"女人",@"视频"];
+    NSArray *btnTitleArr = @[@"新闻",@"咨询",@"开心一刻", @"开心三刻",@"手",@"热点",@"南京",@"女人",@"视频"];
     ScrollMenuView *scrollBtnMenu = [[ScrollMenuView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 30)];
     scrollBtnMenu.titleArray = btnTitleArr;
     scrollBtnMenu.menuViewdelegate = self;
     [self.view addSubview:scrollBtnMenu];
 }
-
-
-
 
 - (IBAction)leftAction:(id)sender {
     [self.leftItem pp_increase];

@@ -63,7 +63,6 @@
     childVc.title = title;
     //设置图标
     childVc.tabBarItem.image = [UIImage imageNamed:imageName];
-    
     //设置选中图标
     UIImage *selectedImage = [UIImage imageNamed:selectedImageName];
     if (iOS7) {
@@ -75,6 +74,7 @@
     self.tabBar.backgroundImage = [UIImage imageNamed:@"tabBar_bg"];
     //添加导航控制器
     JDNavigationController *nav = [[JDNavigationController alloc] initWithRootViewController:childVc];
+    [nav.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:239/255.0 green:109/255.0 blue:114/255.0 alpha:1]} forState:UIControlStateSelected];
     [self addChildViewController:nav];
 
 }
