@@ -36,8 +36,8 @@
 
 static CGFloat const kLeftTableViewWidth = 80.0;
 static CGFloat const kCollectionViewMargin = 3.0;
-static NSString *const collentionViewIdentifier = @"CDIdentifier";
 
+static NSString *const collentionViewIdentifier = @"CDIdentifier";
 static NSString *const collentionHeaderIdentifier = @"GiftCollectionHeaderView";
 static NSString *const collentionFootIdentifier = @"GiftCollectionFooterView";
 
