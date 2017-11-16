@@ -110,6 +110,8 @@
 		966487D01FBC10480024B842 /* JDClassSubItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 966487CF1FBC10480024B842 /* JDClassSubItemCell.m */; };
 		966487D31FBC2CBC0024B842 /* JDGoodsSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966487D21FBC2CBC0024B842 /* JDGoodsSetViewController.m */; };
 		966487D61FBC2EED0024B842 /* JDRecommendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 966487D51FBC2EEC0024B842 /* JDRecommendItem.m */; };
+		966487DA1FBC344E0024B842 /* GQGesVCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 966487D91FBC344E0024B842 /* GQGesVCTransition.m */; };
+		966487DF1FBC3A210024B842 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 966487DE1FBC3A210024B842 /* UIBarButtonItem+Extension.m */; };
 		F91C128E1F1664060091D1FB /* ScrollMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F91C128D1F1664060091D1FB /* ScrollMenuView.m */; };
 		F94E1E441F139761005804DC /* GiftCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94E1E431F139761005804DC /* GiftCollectionHeaderView.m */; };
 		F9B99FD51F092218008047F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B99FD41F092218008047F4 /* main.m */; };
@@ -330,6 +332,10 @@
 		966487D21FBC2CBC0024B842 /* JDGoodsSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDGoodsSetViewController.m; sourceTree = "<group>"; };
 		966487D41FBC2EEC0024B842 /* JDRecommendItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDRecommendItem.h; sourceTree = "<group>"; };
 		966487D51FBC2EEC0024B842 /* JDRecommendItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDRecommendItem.m; sourceTree = "<group>"; };
+		966487D81FBC344E0024B842 /* GQGesVCTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQGesVCTransition.h; sourceTree = "<group>"; };
+		966487D91FBC344E0024B842 /* GQGesVCTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQGesVCTransition.m; sourceTree = "<group>"; };
+		966487DD1FBC3A210024B842 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		966487DE1FBC3A210024B842 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		F91C128C1F1664060091D1FB /* ScrollMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollMenuView.h; sourceTree = "<group>"; };
 		F91C128D1F1664060091D1FB /* ScrollMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollMenuView.m; sourceTree = "<group>"; };
 		F94E1E421F139761005804DC /* GiftCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCollectionHeaderView.h; sourceTree = "<group>"; };
@@ -416,6 +422,7 @@
 		5F0600CA1F16152D0033A295 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				966487D71FBC344E0024B842 /* GQGesVCTransition */,
 				966487701FBBDDF50024B842 /* MJExtension */,
 			);
 			path = Lib;
@@ -724,6 +731,7 @@
 		5FC6E5561F1CA46600BD6913 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				961C89201FBD2B9100F1DDCA /* CustomView */,
 				966487CC1FBC0D3D0024B842 /* ConllectionView */,
 				966487CB1FBC08D80024B842 /* tableView */,
 			);
@@ -865,6 +873,7 @@
 		5FEC17091F131A28006DDFA5 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				966487DB1FBC39C20024B842 /* Main */,
 				5FC6E5371F1C92C700BD6913 /* 京东 */,
 				5FEC17581F136913006DDFA5 /* 联动collentionView */,
 				5FEC170A1F131A66006DDFA5 /* 联动TableVIew  */,
@@ -1028,6 +1037,13 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		961C89201FBD2B9100F1DDCA /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
 		963C25331FBA970400F329B3 /* ShowView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1177,6 +1193,37 @@
 			name = ConllectionView;
 			sourceTree = "<group>";
 		};
+		966487D71FBC344E0024B842 /* GQGesVCTransition */ = {
+			isa = PBXGroup;
+			children = (
+				966487D81FBC344E0024B842 /* GQGesVCTransition.h */,
+				966487D91FBC344E0024B842 /* GQGesVCTransition.m */,
+			);
+			path = GQGesVCTransition;
+			sourceTree = "<group>";
+		};
+		966487DB1FBC39C20024B842 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				966487DC1FBC39EB0024B842 /* Category(分类) */,
+				F9B9A00D1F092240008047F4 /* Models */,
+				F9B9A00C1F09223C008047F4 /* Views */,
+				F9B9A00B1F09222E008047F4 /* Controller */,
+				F9B9A00A1F09222A008047F4 /* Tool */,
+				F9B9A0091F092224008047F4 /* other */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		966487DC1FBC39EB0024B842 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				966487DD1FBC3A210024B842 /* UIBarButtonItem+Extension.h */,
+				966487DE1FBC3A210024B842 /* UIBarButtonItem+Extension.m */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
 		F91C128B1F1663AF0091D1FB /* 主页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1209,11 +1256,6 @@
 			isa = PBXGroup;
 			children = (
 				5FEC17091F131A28006DDFA5 /* Class */,
-				F9B9A00D1F092240008047F4 /* Models */,
-				F9B9A00C1F09223C008047F4 /* Views */,
-				F9B9A00B1F09222E008047F4 /* Controller */,
-				F9B9A00A1F09222A008047F4 /* Tool */,
-				F9B9A0091F092224008047F4 /* other */,
 				F9B99FDC1F092218008047F4 /* Main.storyboard */,
 				F9B99FE21F09221A008047F4 /* Assets.xcassets */,
 				F9B99FE41F09221A008047F4 /* LaunchScreen.storyboard */,
@@ -1523,7 +1565,9 @@
 				9664878D1FBBDDF50024B842 /* NSObject+MJKeyValue.m in Sources */,
 				9664878C1FBBDDF50024B842 /* NSObject+MJCoding.m in Sources */,
 				F9B99FD81F092218008047F4 /* AppDelegate.m in Sources */,
+				966487DA1FBC344E0024B842 /* GQGesVCTransition.m in Sources */,
 				F9D9838F1F0938A60041C661 /* HomeNAVController.m in Sources */,
+				966487DF1FBC3A210024B842 /* UIBarButtonItem+Extension.m in Sources */,
 				9664878A1FBBDDF50024B842 /* MJPropertyType.m in Sources */,
 				5FEC174C1F134C23006DDFA5 /* UIImage+GIF.m in Sources */,
 				5FEC174D1F134C23006DDFA5 /* UIImage+MultiFormat.m in Sources */,
