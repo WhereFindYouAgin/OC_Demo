@@ -9,6 +9,8 @@
 #import "JDConst.h"
 
 @implementation JDConst
+/** 常量数 */
+CGFloat const DCMargin = 10;
 
 CGFloat const DCTopNavH = 64.0;
 @end

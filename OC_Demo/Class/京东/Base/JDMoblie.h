@@ -18,6 +18,9 @@
 //导航栏标题字体大小
 #define JDNavigationFont [UIFont boldSystemFontOfSize:16]
 #define JD15Font [UIFont fontWithName:PFR size:15];
+#define JD14Font [UIFont fontWithName:PFR size:14];
+#define JD10Font [UIFont fontWithName:PFR size:10];
+
 
 
 //公用颜色
@@ -29,5 +32,5 @@
 #else
 #   define DLog(...)
 #endif
-
+#import "UIView+Extension.h"
 #endif /* JDMoblie_h */

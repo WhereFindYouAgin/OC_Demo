@@ -11,6 +11,7 @@
 
 @interface JDConst : NSObject
 
+UIKIT_EXTERN CGFloat const DCMargin;
 UIKIT_EXTERN CGFloat const DCTopNavH;
 
 @end
