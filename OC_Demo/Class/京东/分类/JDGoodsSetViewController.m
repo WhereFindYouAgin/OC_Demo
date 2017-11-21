@@ -14,6 +14,7 @@
 #import "JDSquareCell.h"
 #import "JDListGridCell.h"
 #import "JDCustionHeadView.h"
+#import "JDRecommendItem.h"
 
 static NSString *const JDCustionHeadViewID = @"DCCustionHeadView";
 static NSString *const JDSquareGridCellID = @"DCSwitchGridCell";
@@ -71,7 +72,7 @@ static NSString *const JDListGridCellID = @"DCListGridCell";
 }
 - (void)switchViewButtonBarItemBtnClick
 {
-   UIButton *btn = (UIButton *)self.switchViewButton.customView;
+    UIButton *btn = (UIButton *)self.switchViewButton.customView;
     btn.selected = !btn.selected;
     self.isSwitchGrid = !self.isSwitchGrid;
     [self.collectionView reloadData];
@@ -81,9 +82,16 @@ static NSString *const JDListGridCellID = @"DCListGridCell";
     return self.setItems.count;
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    JDSquareCell *cell = nil;
+    JDListGridCell *cell = nil;
     cell = self.isSwitchGrid ?   [collectionView dequeueReusableCellWithReuseIdentifier:JDListGridCellID forIndexPath:indexPath] : [collectionView dequeueReusableCellWithReuseIdentifier:JDSquareGridCellID forIndexPath:indexPath];
     cell.youSelectItem = self.setItems[indexPath.row];
+    if (self.isSwitchGrid) {
+        __weak typeof(cell)weakCell = cell;
+        cell.colonClickBlock = ^{
+            JDRecommendItem *weakItem = weakCell.youSelectItem;
+            NSLog(@"%@",weakItem.main_title);
+        };
+    }
     return cell;
 }
 
