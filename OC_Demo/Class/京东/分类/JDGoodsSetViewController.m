@@ -9,11 +9,13 @@
 #import "JDGoodsSetViewController.h"
 #import "JDDataTool.h"
 #import "UIBarButtonItem+Extension.h"
+#import "UIView+Extension.h"
 #import "JDHoverFlowLayout.h"
 #import "JDMoblie.h"
 #import "JDSquareCell.h"
 #import "JDListGridCell.h"
 #import "JDCustionHeadView.h"
+#import "JDColonInsView.h"
 #import "JDRecommendItem.h"
 
 static NSString *const JDCustionHeadViewID = @"DCCustionHeadView";
@@ -26,6 +28,10 @@ static NSString *const JDListGridCellID = @"DCListGridCell";
 
 /* scrollerVew */
 @property (strong , nonatomic)UICollectionView *collectionView;
+
+/* 冒号工具View */
+@property (strong , nonatomic)JDColonInsView *colonView;
+
 /**
  0：列表视图，1：格子视图
  */
@@ -89,7 +95,7 @@ static NSString *const JDListGridCellID = @"DCListGridCell";
         __weak typeof(cell)weakCell = cell;
         cell.colonClickBlock = ^{
             JDRecommendItem *weakItem = weakCell.youSelectItem;
-            NSLog(@"%@",weakItem.main_title);
+            [self setUpConlonInsViews:weakCell];
         };
     }
     return cell;
@@ -119,5 +125,19 @@ static NSString *const JDListGridCellID = @"DCListGridCell";
         reusableview = jdReusableView;
     }
     return reusableview;
+}
+
+#pragma mark - 冒号工具View
+- (void)setUpConlonInsViews:(UICollectionViewCell *)cell{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        self.colonView = [[JDColonInsView alloc] init];
+    });
+    [cell addSubview:self.colonView];
+    self.colonView.frame = CGRectMake(cell.width, 0, cell.width - 120, cell.height);
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        self.colonView.x = 120;
+    }];
 }
 @end

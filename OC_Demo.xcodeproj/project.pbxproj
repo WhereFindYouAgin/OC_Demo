@@ -86,6 +86,7 @@
 		961C894D1FBD6D7700F1DDCA /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C89431FBD6D7700F1DDCA /* ViewController+MASAdditions.m */; };
 		961C89501FBD6FF300F1DDCA /* DCSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C894E1FBD6FF100F1DDCA /* DCSpeedy.m */; };
 		961C89541FBD7F0900F1DDCA /* JDCustionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C89531FBD7F0900F1DDCA /* JDCustionHeadView.m */; };
+		9662CCBC1FC66966009BDA5B /* JDColonInsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9662CCBB1FC66966009BDA5B /* JDColonInsView.m */; };
 		966487691FBBDC7E0024B842 /* JDDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 966487681FBBDC7E0024B842 /* JDDataTool.m */; };
 		9664876C1FBBDD190024B842 /* JDClassGoodsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664876B1FBBDD190024B842 /* JDClassGoodsItem.m */; };
 		966487861FBBDDF50024B842 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 966487731FBBDDF50024B842 /* MJExtensionConst.m */; };
@@ -323,6 +324,8 @@
 		961C894F1FBD6FF200F1DDCA /* DCSpeedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSpeedy.h; sourceTree = "<group>"; };
 		961C89521FBD7F0900F1DDCA /* JDCustionHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCustionHeadView.h; sourceTree = "<group>"; };
 		961C89531FBD7F0900F1DDCA /* JDCustionHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCustionHeadView.m; sourceTree = "<group>"; };
+		9662CCBA1FC66966009BDA5B /* JDColonInsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDColonInsView.h; sourceTree = "<group>"; };
+		9662CCBB1FC66966009BDA5B /* JDColonInsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDColonInsView.m; sourceTree = "<group>"; };
 		966487671FBBDC7E0024B842 /* JDDataTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDDataTool.h; sourceTree = "<group>"; };
 		966487681FBBDC7E0024B842 /* JDDataTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDDataTool.m; sourceTree = "<group>"; };
 		9664876A1FBBDD190024B842 /* JDClassGoodsItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDClassGoodsItem.h; sourceTree = "<group>"; };
@@ -1086,6 +1089,8 @@
 				961C89221FBD661400F1DDCA /* JDHoverFlowLayout.m */,
 				961C89521FBD7F0900F1DDCA /* JDCustionHeadView.h */,
 				961C89531FBD7F0900F1DDCA /* JDCustionHeadView.m */,
+				9662CCBA1FC66966009BDA5B /* JDColonInsView.h */,
+				9662CCBB1FC66966009BDA5B /* JDColonInsView.m */,
 			);
 			name = CustomView;
 			sourceTree = "<group>";
@@ -1621,6 +1626,7 @@
 				5F13C21D1F1DFB9400D537CD /* TADotView.m in Sources */,
 				5FEC17121F131C6D006DDFA5 /* CommodityViewController.m in Sources */,
 				5FEC17491F134C23006DDFA5 /* SDWebImageManager.m in Sources */,
+				9662CCBC1FC66966009BDA5B /* JDColonInsView.m in Sources */,
 				F94E1E441F139761005804DC /* GiftCollectionHeaderView.m in Sources */,
 				961C894A1FBD6D7700F1DDCA /* NSArray+MASAdditions.m in Sources */,
 				5FA0031C1F0B2D06002E41F4 /* UIImage+image.m in Sources */,
